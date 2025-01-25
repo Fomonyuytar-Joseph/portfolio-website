@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const LogoAtom = () => {
   return (
@@ -393,6 +393,6 @@ const LogoAtom = () => {
       </svg>
     </div>
   );
-}
+};
 
-export default LogoAtom
+export default LogoAtom;

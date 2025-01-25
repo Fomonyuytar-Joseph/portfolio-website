@@ -1,6 +1,6 @@
 import { IconRepository } from '@/lib/repository/icons/icon.repository';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 const SocialHandles = () => {
   return (
@@ -8,7 +8,7 @@ const SocialHandles = () => {
       <Link href="https://www.linkedin.com/in/fomonyuytar-joseph">
         <IconRepository.LinkedInIcon />
       </Link>
-      <Link href="https://twitter.com/FJoseph_dev" >
+      <Link href="https://twitter.com/FJoseph_dev">
         <IconRepository.TwitterIcon />
       </Link>
       <Link href="/https://github.com/Fomonyuytar-Joseph">
@@ -17,6 +17,6 @@ const SocialHandles = () => {
       <div className="w-px h-24 bg-tertiary-light-slate" />
     </div>
   );
-}
+};
 
-export default SocialHandles
+export default SocialHandles;

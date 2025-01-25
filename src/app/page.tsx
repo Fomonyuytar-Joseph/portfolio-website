@@ -1,6 +1,6 @@
-import Navbar from "@/components/molecules/navbar/navabar.molecule";
-import SocialHandles from "@/components/molecules/socialHandles/socialHandles.molecule";
-import HeroSectionTemplate from "@/components/templates/heroSection.template";
+import Navbar from '@/components/molecules/navbar/navabar.molecule';
+import SocialHandles from '@/components/molecules/socialHandles/socialHandles.molecule';
+import HeroSectionTemplate from '@/components/templates/heroSection.template';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
           <HeroSectionTemplate />
         </div>
       </div>
-      <SocialHandles/>
+      <SocialHandles />
     </div>
   );
 }

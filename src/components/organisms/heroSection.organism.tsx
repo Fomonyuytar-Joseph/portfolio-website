@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HeroSectionOrganism = () => {
   return (
@@ -21,6 +21,6 @@ const HeroSectionOrganism = () => {
       </p>
     </div>
   );
-}
+};
 
-export default HeroSectionOrganism
+export default HeroSectionOrganism;

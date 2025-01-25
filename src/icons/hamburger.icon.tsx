@@ -1,7 +1,7 @@
 import { IconType } from '@/types/icon.type';
-import React from 'react'
+import React from 'react';
 
-const HamburgerIcon: React.FC<IconType> = ({className ,onClick}) => {
+const HamburgerIcon: React.FC<IconType> = ({ className, onClick }) => {
   return (
     <svg
       width="18"
@@ -15,6 +15,6 @@ const HamburgerIcon: React.FC<IconType> = ({className ,onClick}) => {
       <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#64ffda" />
     </svg>
   );
-}
+};
 
-export default HamburgerIcon
+export default HamburgerIcon;
