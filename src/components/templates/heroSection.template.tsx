@@ -3,7 +3,7 @@ import HeroSectionOrganism from '../organisms/heroSection.organism';
 
 const HeroSectionTemplate = () => {
   return (
-    <div className="w-full h-screen mt-20">
+    <div className="w-full pt-20">
       <HeroSectionOrganism />
     </div>
   );

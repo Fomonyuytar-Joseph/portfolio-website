@@ -4,14 +4,23 @@ import React from 'react';
 
 const SocialHandles = () => {
   return (
-    <div className="fixed bottom-0 left-auto flex flex-col items-center space-y-6">
-      <Link href="https://www.linkedin.com/in/fomonyuytar-joseph">
+    <div className="fixed bottom-0 left-[72px] flex flex-col items-center space-y-6 text-white">
+      <Link
+        href="https://www.linkedin.com/in/fomonyuytar-joseph"
+        className="hover:text-secondary-green"
+      >
         <IconRepository.LinkedInIcon />
       </Link>
-      <Link href="https://twitter.com/FJoseph_dev">
+      <Link
+        href="https://twitter.com/FJoseph_dev"
+        className="hover:text-secondary-green "
+      >
         <IconRepository.TwitterIcon />
       </Link>
-      <Link href="/https://github.com/Fomonyuytar-Joseph">
+      <Link
+        href="/https://github.com/Fomonyuytar-Joseph"
+        className="hover:text-secondary-green"
+      >
         <IconRepository.GithubIcon />
       </Link>
       <div className="w-px h-24 bg-tertiary-light-slate" />
