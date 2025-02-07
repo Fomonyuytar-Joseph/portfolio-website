@@ -1,5 +1,5 @@
-import React from 'react';
-import HeroSectionOrganism from '../organisms/heroSection.organism';
+import React from "react";
+import HeroSectionOrganism from "../../organisms/hero/heroSection.organism";
 
 const HeroSectionTemplate = () => {
   return (

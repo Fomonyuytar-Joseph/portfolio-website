@@ -3,8 +3,8 @@ import styles from './navbar.module.css';
 import Link from 'next/link';
 
 import { IconRepository } from '@/lib/repository/icons/icon.repository';
-import Button from '@/components/atoms/button.atom';
-import LogoAtom from '@/components/atoms/logo.atom';
+import Button from '@/components/atoms/button/button.atom';
+import LogoAtom from '@/components/atoms/logo/logo.atom';
 
 const Navbar = () => {
   return (
