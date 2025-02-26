@@ -3,7 +3,7 @@ import React from "react";
 
 const EmailHandle = () => {
   return (
-    <div className="fixed bottom-0 right-[72px] flex flex-col items-center space-y-6 text-white">
+    <div className="fixed bottom-0 right-[-32px] flex flex-col items-center space-y-6 text-white">
       <Link
         href="https://www.linkedin.com/in/fomonyuytar-joseph"
         className="hover:text-secondary-green rotate-90 mb-[85px] font-fira text-xs tracking-widest text-tertiary-lightest-slate"
