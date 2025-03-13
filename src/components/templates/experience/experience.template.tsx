@@ -1,12 +1,8 @@
-import ExperienceOrganism from '@/components/organisms/experience/experience.organism'
-import React from 'react'
+import ExperienceOrganism from "@/components/organisms/experience/experience.organism";
+import React from "react";
 
 const ExperienceTemplate = () => {
-  return (
-    <div>
-        <ExperienceOrganism/>
-    </div>
-  )
-}
+  return <ExperienceOrganism />;
+};
 
-export default ExperienceTemplate
+export default ExperienceTemplate;

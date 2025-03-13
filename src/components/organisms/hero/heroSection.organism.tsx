@@ -1,3 +1,4 @@
+import FolderIcon from '@/icons/folder.icon';
 import React from 'react';
 
 const HeroSectionOrganism = () => {
@@ -19,6 +20,7 @@ const HeroSectionOrganism = () => {
         creating web solutions that combine innovation, simplicity, and
         creativity.
       </p>
+      <FolderIcon/>
     </div>
   );
 };

@@ -41,7 +41,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <Button className="max-lg:hidden" />
+      <Button className="max-lg:hidden" text="Resume" />
       <IconRepository.HamburgerIcon className="lg:hidden cursor-pointer" />
     </nav>
   );

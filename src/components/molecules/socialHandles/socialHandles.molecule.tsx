@@ -4,7 +4,7 @@ import React from 'react';
 
 const SocialHandles = () => {
   return (
-    <div className="fixed bottom-0 left-[72px] flex flex-col items-center space-y-12 text-tertiary-lightest-slate">
+    <div className="hidden fixed bottom-0 left-[72px] lg:flex flex-col items-center space-y-12 text-tertiary-lightest-slate">
       <Link
         href="https://www.linkedin.com/in/fomonyuytar-joseph"
         className="hover:text-secondary-green"
