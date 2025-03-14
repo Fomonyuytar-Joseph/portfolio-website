@@ -1,8 +1,15 @@
+import Link from 'next/link';
 import React from 'react';
 
-const LogoAtom = () => {
-  return (
-    <div>
+
+interface LogoAtomProps {
+  onClick?: (e:React.MouseEvent<HTMLAnchorElement, MouseEvent> )=>void
+}
+
+const LogoAtom:React.FC<LogoAtomProps> = ({ onClick }) => {
+
+  return  (
+    <Link href={"#"} onClick={onClick}>
       <svg
         version="1.1"
         viewBox="0 0 2048 1551"
@@ -391,7 +398,7 @@ const LogoAtom = () => {
           fill="#01D9B7"
         />
       </svg>
-    </div>
+    </Link>
   );
 };
 

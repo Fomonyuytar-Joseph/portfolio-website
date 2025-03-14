@@ -10,26 +10,28 @@ import NoteWorthyProjectsTemplate from "@/components/templates/noteWorthyProject
 export default function Home() {
   return (
     <div className="w-full bg-primary-navy relative">
-      <div className="fixed top-0 left-0 px-12 w-full">
-        <Navbar />
-      </div>
+      <Navbar />
 
-      <div className="w-[600px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1200px] mx-auto 2xl:px-[100px] mt-[102px] h-[calc(100dvh-102px)] ">
-        <HeroSectionTemplate />
-      </div>
+      <div className="w-full flex flex-col items-center mt-[120px]">
+        <section id="home" className="section">
+          <HeroSectionTemplate />
+        </section>
 
-      <div className="w-[600px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1200px] mx-auto 2xl:px-[100px] mt-[102px] ">
-        <AboutMeTemplate />
-      </div>
+        <section id="about" className="section">
+          <AboutMeTemplate />
+        </section>
 
-      <div className="w-[600px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1200px] mx-auto 2xl:px-[100px] mt-[170px] 2xl:mr-[200px]">
-        <ExperienceTemplate />
-      </div>
-      <div className="w-[600px] lg:w-[800px] xl:w-[1100px] 2xl:w-[1200px] mx-auto mt-[102px] ">
-        <NoteWorthyProjectsTemplate />
-      </div>
-      <div className="w-[600px] lg:w-[800px] xl:w-[1000px] 2xl:w-[1200px] mx-auto 2xl:px-[100px] mt-[202px] mb-[200px] ">
-        <ContactMeTemplate/>
+        <section id="experience" className="section">
+          <ExperienceTemplate />
+        </section>
+
+        <section id="work" className="section">
+          <NoteWorthyProjectsTemplate />
+        </section>
+
+        <section id="contact" className="section">
+          <ContactMeTemplate />
+        </section>
       </div>
 
       <SocialHandles />
