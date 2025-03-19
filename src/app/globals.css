@@ -12,8 +12,8 @@ body {
 
 .section {
   width: 100%;
-  max-width: 1400px;
-  padding: 50px 100px;
+  max-width: 1200px;
+  padding: 50px 50px;
   scroll-margin-top: 100px;
   margin-top: 50px;
 }

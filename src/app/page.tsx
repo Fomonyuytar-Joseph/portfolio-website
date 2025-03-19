@@ -1,6 +1,7 @@
 import EmailHandle from "@/components/molecules/emailHandle/emailHandle.atom";
 import Navbar from "@/components/molecules/navbar/navabar.molecule";
 import SocialHandles from "@/components/molecules/socialHandles/socialHandles.molecule";
+import ProjectsWorkedOnOrganism from "@/components/organisms/projectsWorkedOn/projectsWorkedOn.organism";
 import AboutMeTemplate from "@/components/templates/aboutMe/AboutMe.template";
 import ContactMeTemplate from "@/components/templates/contactMe/contactMe.template";
 import ExperienceTemplate from "@/components/templates/experience/experience.template";
@@ -23,6 +24,9 @@ export default function Home() {
 
         <section id="experience" className="section">
           <ExperienceTemplate />
+        </section>
+        <section id="projects" className="section">
+          <ProjectsWorkedOnOrganism/>
         </section>
 
         <section id="work" className="section">
