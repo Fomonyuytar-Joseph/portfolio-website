@@ -3,6 +3,8 @@ import { images } from "@/lib/assets/images";
 import React from "react";
 import RightOrientationProjectCard from "@/components/molecules/DetailedProjectCard/rightOrientationProjectCard.molecule";
 import LeftOrientationProjectCard from "@/components/molecules/DetailedProjectCard/leftOrientationProjectCard.molecule";
+import ProjectCard from "@/components/molecules/ProjectCard/projectCard.molecule";
+import { ProjectsWorkedOnData } from "@/lib/utils/constants.utils";
 
 const ProjectsWorkedOnOrganism = () => {
   const project = {
@@ -17,11 +19,13 @@ const ProjectsWorkedOnOrganism = () => {
     <div className="w-full">
       <HeadingBannerAtom text="Featured Projects I worked On" />
 
-      <div className="w-full flex flex-col gap-[180px]">
+      <div className="w-full hidden lg:flex flex-col gap-[180px] ">
         <RightOrientationProjectCard
           image={images.nkwaImage}
-          title={project.title}
-          description={project.description}
+          title={"ValletPay"}
+          description={
+            "An online solution for seamless financial transactions and effortP"
+          }
           tools={["Next.js", "Tailwind CSS", "Redux Toolkit", "TypeScript"]}
           // github={project.github}
           externalLink={project.externalLink}
@@ -29,14 +33,16 @@ const ProjectsWorkedOnOrganism = () => {
         <LeftOrientationProjectCard
           image={images.digitalRenter}
           title={"Digital Renter App"}
-          description={project.description}
+          description={
+            "Digital Renter is a web and mobile apps solution which helps people advertise and find vacant houses/land."
+          }
           tools={["React Native", "Expo", "Laravel"]}
           // github={project.github}
           externalLink={project.externalLink}
         />
         <RightOrientationProjectCard
           image={images.nkwaImage}
-          title={"MyNkwa"}
+          title={"Nkwa Website"}
           description={project.description}
           tools={project.tools}
           // github={project.github}
@@ -52,6 +58,19 @@ const ProjectsWorkedOnOrganism = () => {
           // github={project.github}
           externalLink={project.externalLink}
         />
+      </div>
+      <div className="flex flex-col gap-5 lg:hidden ">
+        {ProjectsWorkedOnData.map((project, index) => (
+          <ProjectCard
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            tools={project.tools}
+            externalLink={project.externalLink}
+            github={project.github}
+            key={index}
+          />
+        ))}
       </div>
     </div>
   );

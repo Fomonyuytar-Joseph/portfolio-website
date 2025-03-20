@@ -58,7 +58,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-6 bg-primary-navy z-50">
+    <nav className="fixed top-0 left-0 w-full flex justify-between items-center py-4 px-6 bg-primary-navy z-[9999]">
       <LogoAtom onClick={(e) => handleLinkClick(e, "#home")} />
       <div className="max-lg:hidden">
         <ul className="flex items-center gap-20 text-tertiary-lightest-slate font-fira text-[13px]">

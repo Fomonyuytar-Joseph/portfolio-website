@@ -10,7 +10,7 @@ const AboutMeSectionOrganism = () => {
       <div className="w-full flex flex-col lg:flex-row gap-12 ">
         <div className="text-tertiary-slate text-xl font-sans max-w-[600px] font-normal">
           <p className="mb-[15px]">
-            Hello! My name is Brittany, and I’m passionate about crafting
+            Hello! My name is Fomonyuytar Joseph, and I’m passionate about crafting
             seamless digital experiences on the web. My journey in web
             development started with curiosity and a desire to build, leading me
             to specialize in frontend development.

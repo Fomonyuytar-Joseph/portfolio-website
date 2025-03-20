@@ -26,7 +26,7 @@ export default function Home() {
           <ExperienceTemplate />
         </section>
         <section id="projects" className="section">
-          <ProjectsWorkedOnOrganism/>
+          <ProjectsWorkedOnOrganism />
         </section>
 
         <section id="work" className="section">

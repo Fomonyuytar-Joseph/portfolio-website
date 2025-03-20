@@ -24,7 +24,7 @@ const RightOrientationProjectCard:React.FC<RightOrientationProjectCardProps> = (
     <div className="relative w-full">
       <div className="">
         {/* Image Wrapper */}
-        <div className="relative w-[520px]  overflow-hidden transition-transform duration-300 ">
+        <div className="relative w-[520px] overflow-hidden transition-transform duration-300 ">
           {/* Original Image */}
           <Image
             src={image}
@@ -34,16 +34,17 @@ const RightOrientationProjectCard:React.FC<RightOrientationProjectCardProps> = (
           />
 
           {/* Green Overlay */}
-          <div className="absolute inset-0 bg-secondary-green mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
+          <div className="absolute inset-0 bg-[#132d3e]/70 mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
         </div>
       </div>
-      <div className="absolute top-0 right-[-120px] ">
+      <div className="absolute top-0 right-[-120px] 2xl:right-[160px]">
         <ProjectInfo
           title={title}
           description={description}
           externalLink={externalLink}
           github={github}
           tools={tools}
+          orientation="end"
         />
       </div>
     </div>

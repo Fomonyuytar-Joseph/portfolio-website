@@ -8,8 +8,7 @@ export interface ProjectInfoProps {
   github?: string;
   externalLink?: string;
   tools: string[];
-  orientation?: "start"|"end"
-
+  orientation?: "start" | "end";
 }
 
 const ProjectInfo: React.FC<ProjectInfoProps> = ({
@@ -18,14 +17,22 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
   github,
   externalLink,
   tools,
-  orientation="end"
+  orientation = "end",
 }) => {
   return (
     <div>
-      <p className={`text-secondary-green font-fira text-[13px] font-normal mb-2 text-${orientation}`}>
+      <p
+        className={`text-secondary-green font-fira text-[13px] font-normal mb-2  ${
+          orientation === "end" ? "text-right" : "text-left"
+        }`}
+      >
         Featured Project
       </p>
-      <h3 className={`text-tertiary-lightest-slate font-semibold text-[28px] leading-[1.1] mb-5 text-${orientation}`}>
+      <h3
+        className={`text-tertiary-lightest-slate font-semibold text-[28px] leading-[1.1] mb-5  ${
+          orientation === "end" ? "text-right" : "text-left"
+        }`}
+      >
         {title}
       </h3>
 
@@ -38,8 +45,12 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
         </p>
       </div>
 
-      <div className={`w-full flex flex-col items-${orientation} flex-${orientation} justify-${orientation}`}>
-        <div className={`flex items-${orientation} justify-${orientation} gap-5 mt-6 w-full mb-[10px] `}>
+      <div
+        className={`w-full flex flex-col items-${orientation} flex-${orientation} justify-${orientation}`}
+      >
+        <div
+          className={`flex items-${orientation} justify-${orientation} gap-5 mt-6 w-full mb-[10px] `}
+        >
           {tools.map((tool, index) => (
             <div
               key={index}
@@ -50,7 +61,9 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
           ))}
         </div>
 
-        <div className={`flex items-${orientation} gap-4 text-tertiary-light-slate mt-2`}>
+        <div
+          className={`flex items-${orientation} gap-4 text-tertiary-light-slate mt-2`}
+        >
           {github && (
             <Link href={github} className="hover:text-secondary-green">
               <IconRepository.GithubOutlineIcon />

@@ -20,16 +20,6 @@ const ExperienceOrganism = () => {
       ],
     },
     {
-      company: "Nkwa",
-      role: "Frontend Developer",
-      duration: "01/2023 - 05/2023",
-      duty: [
-        "Spearheaded the development of the company's new website utilizing cutting-edge  technologies including TypeScript, Next.js, React, and Framer Motion to enhance user  engagement and attract a wider audience to the application",
-        "Collaborated with the design team to create user-friendly interfaces and design systems.",
-        "Contributed to the development and testing of Version 2 of the company's application  using React Native , focusing on feature enhancements and bug fixes to deliver a  seamless user experience.",
-      ],
-    },
-    {
       company: "Digital Renter",
       role: "Software Intern",
       duration: "06/2022 - 01/2023",
@@ -37,6 +27,16 @@ const ExperienceOrganism = () => {
         "contributed in the development of a Customer Relationship Management System using TypeScript, Redux Toolkit, Bootstrap, and Next.js, improving client interaction and data management efficiency",
         "Implemented a video upload feature in the React Native mobile app, enabling agents  to upload videos of vacant houses, enhancing the viewing experience for potential  tenants",
         "Leveraged deep linking technology to seamlessly integrate the application with  external links related to property listings, ensuring a smooth transition from web to  app for enhanced user engagement",
+      ],
+    },
+    {
+      company: "Nkwa",
+      role: "Frontend Developer",
+      duration: "01/2023 - 05/2023",
+      duty: [
+        "Spearheaded the development of the company's new website utilizing cutting-edge  technologies including TypeScript, Next.js, React, and Framer Motion to enhance user  engagement and attract a wider audience to the application",
+        "Collaborated with the design team to create user-friendly interfaces and design systems.",
+        "Contributed to the development and testing of Version 2 of the company's application  using React Native , focusing on feature enhancements and bug fixes to deliver a  seamless user experience.",
       ],
     },
   ];

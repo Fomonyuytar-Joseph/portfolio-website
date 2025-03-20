@@ -12,8 +12,8 @@ const TabPanel:React.FC<TabPanelProps> = ({activeIndex ,setActiveIndex}) => {
 
   const placesWorked= [
     "Camsol" ,
+    "Digital Renter",
     "Nkwa",
-    "Digital Renter"
   ]
   return (
     <div className=''>
