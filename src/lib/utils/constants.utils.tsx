@@ -22,7 +22,7 @@ export const FeaturedArchivedProjects: ArchiveCardProps[] = [
     description:
       "A final year project in the university of Buea which is a record management system to help manage student records ",
     github: "#",
-    externalLink: "#",
+    // externalLink: "#",
     tools: ["Next.js", "Tailwind CSS", "Framer motion"],
   },
 ];

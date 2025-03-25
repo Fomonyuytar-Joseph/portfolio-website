@@ -6,6 +6,7 @@ import HamburgerIcon from '@/icons/hamburger.icon';
 import FolderIcon from '@/icons/folder.icon';
 import GithubOutlineIcon from '@/icons/githubOutline.icon';
 import ExternalLinkIcon from '@/icons/externalLink.icon';
+import BurgerMenuIcon from '@/icons/burgerMenu.icon';
 
 export const IconRepository = {
   TwitterIcon,
@@ -15,5 +16,6 @@ export const IconRepository = {
   HamburgerIcon,
   FolderIcon,
   GithubOutlineIcon,
-  ExternalLinkIcon
+  ExternalLinkIcon,
+  BurgerMenuIcon
 };
