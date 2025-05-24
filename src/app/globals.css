@@ -18,6 +18,15 @@ body {
   margin-top: 50px;
 }
 
+
+.section2{
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 50px;
+  scroll-margin-top: 100px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1536px) { /* Tablets & small desktops */
   .section {
     max-width: 900px;
@@ -34,6 +43,13 @@ body {
     scroll-margin-top: 80px;
     margin-top: 40px;
   }
+
+  .section2{
+    max-width: 100%;
+    padding: 40px 130px;
+    scroll-margin-top: 80px;
+    margin-top: 40px;
+  }
 }
 
 /* Responsive adjustments */
@@ -44,6 +60,8 @@ body {
     scroll-margin-top: 80px;
     margin-top: 40px;
   }
+
+  
 }
 
 @media (max-width: 768px) { /* Tablets & large phones */
@@ -55,7 +73,7 @@ body {
 }
 
 @media (max-width: 640px) { /* Small tablets & large phones */
-  .section {
+  .section ,.section2 {
     padding: 25px 25px;
     scroll-margin-top: 60px;
     margin-top: 25px;
@@ -63,7 +81,7 @@ body {
 }
 
 @media (max-width: 480px) { /* Phones */
-  .section {
+  .section  ,.section2{
     max-width: 100%;
     padding: 20px 25px;
     scroll-margin-top: 50px;

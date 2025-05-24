@@ -21,7 +21,7 @@ const LeftOrientationProjectCard: React.FC<LeftOrientationProjectCardProps> = ({
 }) => {
   return (
     <div className="relative w-full ">
-      <div className="absolute z-[99] 2xl:left-[200px] ">
+      <div className="absolute z-[99] 2xl:left-[-150px] ">
         <ProjectInfo
           title={title}
           description={description}

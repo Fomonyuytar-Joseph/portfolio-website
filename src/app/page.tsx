@@ -29,7 +29,7 @@ export default function Home() {
           <ProjectsWorkedOnOrganism />
         </section>
 
-        <section id="work" className="section">
+        <section id="work" className="section2">
           <NoteWorthyProjectsTemplate />
         </section>
 

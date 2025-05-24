@@ -19,7 +19,7 @@ const ArchiveCard: React.FC<ArchiveCardProps> = ({
 }) => {
   return (
     <div
-      className="w-full flex flex-col items-start justify-between  bg-primary-light-navy rounded transition-transform duration-300 max-xl:hover:-translate-x-5 xl:hover:-translate-y-3 cursor-pointer"
+      className="w-full flex flex-col items-start justify-between  bg-primary-light-navy rounded transition-transform duration-300 max-xl:hover:-translate-x-5 xl:hover:-translate-y-3 cursor-pointer "
       style={{
         boxShadow: "0 10px 30px -15px rgba(2, 12, 27, 0.7)",
         padding: "2rem 1.75rem",
