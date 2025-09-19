@@ -65,12 +65,22 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
           className={`flex items-${orientation} gap-4 text-tertiary-light-slate mt-2`}
         >
           {github && (
-            <Link href={github} className="hover:text-secondary-green">
+            <Link
+              href={github}
+              className="hover:text-secondary-green"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconRepository.GithubOutlineIcon />
             </Link>
           )}
           {externalLink && (
-            <Link href={externalLink} className="hover:text-secondary-green">
+            <Link
+              href={externalLink}
+              className="hover:text-secondary-green"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconRepository.ExternalLinkIcon />
             </Link>
           )}

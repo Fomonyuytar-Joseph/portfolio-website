@@ -32,9 +32,10 @@ const RightOrientationProjectCard:React.FC<RightOrientationProjectCardProps> = (
             objectFit="cover"
             className="transition duration-300 "
           />
-
           {/* Green Overlay */}
-          <div className="absolute inset-0 bg-[#132d3e]/70 mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
+          <div className="absolute inset-0 "></div>
+          {/* bg-[#132d3e]/70 mix-blend-multiply transition-opacity duration-300
+          opacity-100 group-hover:opacity-0 */}
         </div>
       </div>
       <div className="absolute top-0 right-[-120px] lg:right-[-30px] 2xl:right-[-150px]">

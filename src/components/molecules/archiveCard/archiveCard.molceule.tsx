@@ -31,12 +31,22 @@ const ArchiveCard: React.FC<ArchiveCardProps> = ({
 
           <div className="flex items-start gap-4 text-tertiary-light-slate ">
             {github && (
-              <Link href={github} className="hover:text-secondary-green">
+              <Link
+                href={github}
+                className="hover:text-secondary-green"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <IconRepository.GithubOutlineIcon />
               </Link>
             )}
             {externalLink && (
-              <Link href={externalLink} className="hover:text-secondary-green">
+              <Link
+                href={externalLink}
+                className="hover:text-secondary-green"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <IconRepository.ExternalLinkIcon />
               </Link>
             )}

@@ -43,7 +43,7 @@ const LeftOrientationProjectCard: React.FC<LeftOrientationProjectCardProps> = ({
           />
 
           {/* Green Overlay */}
-          <div className="absolute inset-0 bg-[#132d3e]/70 mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
+          <div className="absolute inset-0"></div>
         </div>
       </div>
     </div>

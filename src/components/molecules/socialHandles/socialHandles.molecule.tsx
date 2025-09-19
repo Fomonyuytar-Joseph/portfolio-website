@@ -8,18 +8,24 @@ const SocialHandles = () => {
       <Link
         href="https://www.linkedin.com/in/fomonyuytar-joseph"
         className="hover:text-secondary-green"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <IconRepository.LinkedInIcon />
       </Link>
       <Link
         href="https://twitter.com/FJoseph_dev"
-        className="hover:text-secondary-green "
+        className="hover:text-secondary-green"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <IconRepository.TwitterIcon />
       </Link>
       <Link
         href="/https://github.com/Fomonyuytar-Joseph"
         className="hover:text-secondary-green"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <IconRepository.GithubIcon />
       </Link>

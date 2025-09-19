@@ -21,42 +21,46 @@ const ProjectsWorkedOnOrganism = () => {
 
       <div className="w-full hidden lg:flex flex-col gap-[180px] ">
         <RightOrientationProjectCard
-          image={images.nkwaImage}
+          image={images.valletPayImage}
           title={"ValletPay"}
           description={
-            "An online solution for seamless financial transactions and effortP"
+            "A fintech solution redefining financial transactions between Europe and Africa. ValletPay enables individuals to send money to loved ones and businesses to make bulk payments with ease."
           }
           tools={["Next.js", "Tailwind CSS", "Redux Toolkit", "TypeScript"]}
           // github={project.github}
-          externalLink={project.externalLink}
+          externalLink={"https://www.linkedin.com/company/valletpay/"}
         />
         <LeftOrientationProjectCard
           image={images.digitalRenter}
           title={"Digital Renter App"}
           description={
-            "Digital Renter is a web and mobile apps solution which helps people advertise and find vacant houses/land."
+            "A real estate platform simplifying house hunting in Cameroon’s busy cities.It connects property seekers with agents, agencies, and landlords"
           }
           tools={["React Native", "Expo", "Laravel"]}
           // github={project.github}
-          externalLink={project.externalLink}
+          externalLink={
+            "https://play.google.com/store/apps/details?id=com.digitalrenter&hl=en"
+          }
         />
         <RightOrientationProjectCard
           image={images.nkwaImage}
           title={"Nkwa Website"}
-          description={project.description}
+          description={
+            "A fintech platform designed to help individuals build consistent savings habits. SmartSave offers goal-based saving plans, automated deposits, and personalized insights to make saving effortless, secure, and rewarding."
+          }
           tools={project.tools}
           // github={project.github}
-          externalLink={project.externalLink}
+          externalLink={"https://mynkwa.com/en"}
         />
         <LeftOrientationProjectCard
-          image={images.nkwaImage}
+          image={images.visioseoImage}
           title={"Visioseo"}
           description={
-            "I worked on this Saas which creates AI-powered, search engine-optimized landing pages that maximize visibility. UX-optimized pages ensure high usability and an improved user experience."
+            "A scalable SEO platform that boosts local and nationwide visibility on Google, driving qualified leads and sustainable business growth."
           }
           tools={["Next.js", "Tailwind CSS", "TypeScript"]}
           // github={project.github}
-          externalLink={project.externalLink}
+          externalLink={"https://www.visioseo.io/"}
         />
       </div>
       <div className="flex flex-col gap-5 lg:hidden ">
