@@ -102,18 +102,30 @@ const Navbar = () => {
         <LogoAtom onClick={(e) => handleLinkClick(e, "#home")} />
         <div className="max-lg:hidden">
           <ul className="flex items-center gap-20 text-tertiary-lightest-slate font-fira text-[13px]">
-            {["about", "experience", "work", "contact"].map((section) => (
-              <li key={section}>
-                <Link
-                  href={`#${section}`}
-                  scroll={false} // Ensures Next.js doesn't override behavior
-                  className="hover:text-secondary-green transition ease-custom duration-custom"
-                  onClick={(e) => handleLinkClick(e, `#${section}`)}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </Link>
-              </li>
-            ))}
+            {["about", "experience", "work", "contact"].map((section) => {
+              const label = section.charAt(0).toUpperCase() + section.slice(1);
+
+              return (
+                <li key={section}>
+                  <Link
+                    href={`#${section}`}
+                    scroll={false}
+                    onClick={(e) => handleLinkClick(e, `#${section}`)}
+                    className="relative group block overflow-hidden"
+                  >
+                    {/* Main text (shoots upward out of view) */}
+                    <span className="relative z-10 block transition-all duration-500 group-hover:-translate-y-8 group-hover:opacity-0">
+                      {label}
+                    </span>
+
+                    {/* Duplicate text (rises into view) */}
+                    <span className="absolute left-0 top-0 w-full h-full flex items-center text-[13px] font-fira text-secondary-green opacity-0 translate-y-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+                      {label}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <Button className="max-lg:hidden" text="Resume" />
