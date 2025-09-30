@@ -10,26 +10,24 @@ import { IconRepository } from "@/lib/repository/icons/icon.repository";
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const navbarHeight = 80; // Adjust based on your navbar's actual height
+  const navbarHeight = 80;
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [showShadow, setShowShadow] = useState(false); // State for box-shadow
-  const [showOverlay, setShowOverlay] = useState(false); // Overlay state
+  const [showShadow, setShowShadow] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false); // trigger animation
+  const [isMounted, setIsMounted] = useState(false); // keep mounted until anim ends
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Handle navbar visibility based on scroll direction
       if (currentScrollY > lastScrollY) {
-        setIsVisible(false); // Hide on scroll down
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // Show on scroll up
+        setIsVisible(true);
       }
 
-      // Add shadow only if not at the top
       setShowShadow(currentScrollY > 0);
-
       setLastScrollY(currentScrollY);
     };
 
@@ -48,10 +46,7 @@ const Navbar = () => {
           navbarHeight -
           20;
 
-        window.scrollTo({
-          top: offset,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: offset, behavior: "smooth" });
       }
     }
   };
@@ -66,7 +61,7 @@ const Navbar = () => {
     href: string
   ) => {
     event.preventDefault();
-    router.push(`${pathname}${href}`, { scroll: false }); // Prevents default Next.js scrolling
+    router.push(`${pathname}${href}`, { scroll: false });
 
     const element = document.querySelector(href);
     if (element) {
@@ -76,15 +71,18 @@ const Navbar = () => {
         navbarHeight -
         20;
 
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
 
   const handleBurgerClick = () => {
-    setShowOverlay(!showOverlay);
+    if (!showOverlay) {
+      setIsMounted(true); // mount before showing
+      requestAnimationFrame(() => setShowOverlay(true));
+    } else {
+      setShowOverlay(false); // trigger close animation
+      setTimeout(() => setIsMounted(false), 300); // wait for anim to finish
+    }
   };
 
   return (
@@ -92,11 +90,11 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full flex justify-between items-center py-4 px-6 bg-primary-navy z-[9999] transition-transform duration-[600ms] ease-in-out ${
           isVisible ? "translate-y-0" : "-translate-y-full"
-        } `} // Conditionally add shadow
+        }`}
         style={{
           boxShadow: showShadow
             ? "0 10px 30px -10px rgba(2, 12, 27, 0.7)"
-            : "none", // Shadow only when not at the top
+            : "none",
         }}
       >
         <LogoAtom onClick={(e) => handleLinkClick(e, "#home")} />
@@ -113,12 +111,9 @@ const Navbar = () => {
                     onClick={(e) => handleLinkClick(e, `#${section}`)}
                     className="relative group block overflow-hidden"
                   >
-                    {/* Main text (shoots upward out of view) */}
                     <span className="relative z-10 block transition-all duration-500 group-hover:-translate-y-8 group-hover:opacity-0">
                       {label}
                     </span>
-
-                    {/* Duplicate text (rises into view) */}
                     <span className="absolute left-0 top-0 w-full h-full flex items-center text-[13px] font-fira text-secondary-green opacity-0 translate-y-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                       {label}
                     </span>
@@ -134,23 +129,32 @@ const Navbar = () => {
           onClick={handleBurgerClick}
         />
       </nav>
+
       {/* Overlay */}
-      {showOverlay && (
+      {isMounted && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[10000]"
-          onClick={() => setShowOverlay(false)} // Close overlay on click outside
+          className={`fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-[10000] flex justify-end transition-opacity duration-300 ${
+            showOverlay ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={handleBurgerClick}
         >
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <ul className="flex flex-col gap-4">
+          {/* Sidebar */}
+          <div
+            className={`bg-primary-light-navy p-8 shadow-lg h-full w-1/2 transform transition-transform duration-300 flex justify-center ${
+              showOverlay ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ul className="flex flex-col gap-9 mt-40">
               {["about", "experience", "work", "contact"].map((section) => (
                 <li key={section}>
                   <Link
                     href={`#${section}`}
                     onClick={(e) => {
                       handleLinkClick(e, `#${section}`);
-                      setShowOverlay(false); // Close overlay after link click
+                      handleBurgerClick(); // close with animation
                     }}
-                    className="text-gray-800 hover:text-secondary-green"
+                    className="text-tertiary-lightest-slate hover:text-secondary-green text-lg font-mono"
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
                   </Link>
