@@ -6,7 +6,7 @@ const SocialHandles = () => {
   return (
     <div className="hidden fixed bottom-0 left-[72px] xl:left-[51px] 2xl:left-[72px] lg:flex flex-col items-center space-y-12 text-tertiary-lightest-slate">
       <Link
-        href="www.linkedin.com/in/fomonyuytar-joseph-56b323228"
+        href="https://linkedin.com/in/fomonyuytar-joseph-56b323228"
         className="hover:text-secondary-green"
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const SocialHandles = () => {
         <IconRepository.TwitterIcon />
       </Link>
       <Link
-        href="/https://github.com/Fomonyuytar-Joseph"
+        href="https://github.com/Fomonyuytar-Joseph"
         className="hover:text-secondary-green"
         target="_blank"
         rel="noopener noreferrer"

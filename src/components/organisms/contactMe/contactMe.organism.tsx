@@ -10,10 +10,12 @@ const ContactMeOrganism = () => {
   return (
     <div className="">
       <HeadingBannerAtom text="Contact Me" />
-      <p className="text-tertiary-slate text-xl mb-[50px]">
+      <p className="text-tertiary-slate text-xl mb-[50px] text-center">
         Got a question or proposal, or just want to say hello? Go ahead.
       </p>
-      <Button text="Say Hello" onClick={handleEmailClick} />
+      <div className="flex items-center justify-center">
+        <Button text="Say Hello" onClick={handleEmailClick} />
+      </div>
     </div>
   );
 };

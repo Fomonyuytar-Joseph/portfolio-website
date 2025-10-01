@@ -5,6 +5,7 @@ import ProjectsWorkedOnOrganism from "@/components/organisms/projectsWorkedOn/pr
 import AboutMeTemplate from "@/components/templates/aboutMe/AboutMe.template";
 import ContactMeTemplate from "@/components/templates/contactMe/contactMe.template";
 import ExperienceTemplate from "@/components/templates/experience/experience.template";
+import FooterTemplate from "@/components/templates/footer/footer.template";
 import HeroSectionTemplate from "@/components/templates/hero/heroSection.template";
 import NoteWorthyProjectsTemplate from "@/components/templates/noteWorthyProjects/noteWorthyProjects.template";
 
@@ -36,10 +37,15 @@ export default function Home() {
         <section id="contact" className="section">
           <ContactMeTemplate />
         </section>
+
+        <section className="section">
+          <FooterTemplate/>
+        </section>
       </div>
 
       <SocialHandles />
       <EmailHandle />
+
     </div>
   );
 }

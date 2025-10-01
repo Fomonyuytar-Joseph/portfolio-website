@@ -140,14 +140,18 @@ const Navbar = () => {
         >
           {/* Sidebar */}
           <div
-            className={`bg-primary-light-navy p-8 shadow-lg h-full w-1/2 transform transition-transform duration-300 flex justify-center ${
+            className={`relative bg-primary-light-navy p-8 shadow-lg h-full w-1/2 transform transition-transform duration-300 flex justify-center ${
               showOverlay ? "translate-x-0" : "translate-x-full"
             }`}
             onClick={(e) => e.stopPropagation()}
           >
+
+            <div className="absolute top-10 right-6 cursor-pointer text-secondary-green" onClick={handleBurgerClick}>
+              <IconRepository.CloseIcon/>
+            </div>
             <ul className="flex flex-col gap-9 mt-40">
               {["about", "experience", "work", "contact"].map((section) => (
-                <li key={section}>
+                <li key={section} className="text-center">
                   <Link
                     href={`#${section}`}
                     onClick={(e) => {

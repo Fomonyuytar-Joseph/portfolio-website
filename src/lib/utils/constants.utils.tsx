@@ -62,7 +62,7 @@ export const ProjectsWorkedOnData: ProjectCardProps[] = [
     externalLink: "#",
     github: "#",
     tools: ["Next.js", "Tailwind CSS", "Framer motion"],
-    image: "Nkwa.png",
+    image: "valletpay_image.jpg",
   },
   {
     title: "Digital Renter",
@@ -89,6 +89,6 @@ export const ProjectsWorkedOnData: ProjectCardProps[] = [
     externalLink: "#",
     // github: "#",
     tools: ["Next.js", "Tailwind CSS", "TypeScript"],
-    image: "Nkwa.png",
+    image: "visioseo_image.png",
   },
 ];

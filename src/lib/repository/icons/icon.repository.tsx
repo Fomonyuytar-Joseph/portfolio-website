@@ -7,6 +7,7 @@ import FolderIcon from '@/icons/folder.icon';
 import GithubOutlineIcon from '@/icons/githubOutline.icon';
 import ExternalLinkIcon from '@/icons/externalLink.icon';
 import BurgerMenuIcon from '@/icons/burgerMenu.icon';
+import CloseIcon from '@/icons/close.icon';
 
 export const IconRepository = {
   TwitterIcon,
@@ -17,5 +18,6 @@ export const IconRepository = {
   FolderIcon,
   GithubOutlineIcon,
   ExternalLinkIcon,
-  BurgerMenuIcon
+  BurgerMenuIcon,
+  CloseIcon
 };

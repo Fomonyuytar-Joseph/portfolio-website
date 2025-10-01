@@ -10,8 +10,8 @@ const AboutMeSectionOrganism = () => {
       <div className="w-full flex flex-col lg:flex-row gap-12 ">
         <div className="text-tertiary-slate text-xl font-sans max-w-[600px] font-normal">
           <p className="mb-[15px]">
-            Hello! My name is Fomonyuytar Joseph, and I’m passionate about crafting
-            seamless digital experiences on the web. My journey in web
+            Hello! My name is Fomonyuytar Joseph, and I’m passionate about
+            crafting seamless digital experiences on the web. My journey in web
             development started with curiosity and a desire to build, leading me
             to specialize in frontend development.
           </p>
@@ -32,22 +32,24 @@ const AboutMeSectionOrganism = () => {
           </p>
         </div>
 
-        <div className="relative group w-64 h-64">
-          {/* Inner border behind image */}
-          <div className="absolute -bottom-2 -right-2 w-full h-full border-2 border-secondary-green  group-hover:opacity-100  transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+        <div className="max-lg:flex max-lg:justify-center max-lg:items-center">
+          <div className="relative group w-64 h-64">
+            {/* Inner border behind image */}
+            <div className="absolute -bottom-2 -right-2 w-full h-full border-2 border-secondary-green  group-hover:opacity-100  transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
 
-          {/* Image Wrapper */}
-          <div className="relative w-64 h-64 overflow-hidden transition-transform duration-300 group-hover:-translate-y-2 group-hover:-translate-x-2">
-            {/* Original Image */}
-            <Image
-              src={images.joseph}
-              alt="Profile"
-              objectFit="cover"
-              className="transition duration-300 "
-            />
+            {/* Image Wrapper */}
+            <div className="relative w-64 h-64 overflow-hidden transition-transform duration-300 group-hover:-translate-y-2 group-hover:-translate-x-2">
+              {/* Original Image */}
+              <Image
+                src={images.joseph}
+                alt="Profile"
+                objectFit="cover"
+                className="transition duration-300 "
+              />
 
-            {/* Green Overlay */}
-            <div className="absolute inset-0 bg-secondary-green mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
+              {/* Green Overlay */}
+              <div className="absolute inset-0 bg-secondary-green mix-blend-multiply transition-opacity duration-300 opacity-100 group-hover:opacity-0 "></div>
+            </div>
           </div>
         </div>
       </div>
