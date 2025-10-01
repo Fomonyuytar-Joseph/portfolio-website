@@ -43,7 +43,7 @@ const ExperienceOrganism = () => {
   return (
     <div>
       <HeadingBannerAtom text="Where I’ve Worked" />
-      <div className="w-full flex gap-4">
+      <div className="w-full flex flex-col  md:flex-row gap-9 md:gap-4">
         <TabPanel activeIndex={activeIndex} setActiveIndex={setaActiveIndex} />
         <div>
           <div>

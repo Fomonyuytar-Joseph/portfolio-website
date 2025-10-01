@@ -16,7 +16,7 @@ const TabPanel:React.FC<TabPanelProps> = ({activeIndex ,setActiveIndex}) => {
     "Nkwa",
   ]
   return (
-    <div className=''>
+    <div className='max-md:flex max-md:justify-between'>
       {placesWorked.map((place, index) => (
         <TabButton active={activeIndex === index} label={place} key={index} onClick={() => setActiveIndex(index)} />
       ))}
