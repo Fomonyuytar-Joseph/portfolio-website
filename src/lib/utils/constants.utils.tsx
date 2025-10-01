@@ -56,6 +56,15 @@ export const FeaturedProjects: ProjectInfoProps[] = [
 
 export const ProjectsWorkedOnData: ProjectCardProps[] = [
   {
+    title: "VisioSEO",
+    description:
+      "I worked on this Saas which creates AI-powered, search engine-optimized landing pages that maximize visibility. UX-optimized pages ensure high usability and an improved user experience.",
+    externalLink: "#",
+    // github: "#",
+    tools: ["Next.js", "Tailwind CSS", "TypeScript"],
+    image: "visioseo_image.png",
+  },
+  {
     title: "ValletPay",
     description:
       "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
@@ -81,14 +90,5 @@ export const ProjectsWorkedOnData: ProjectCardProps[] = [
     // github: "#",
     tools: ["Next.js", "Tailwind CSS", "Framer motion"],
     image: "Nkwa.png",
-  },
-  {
-    title: "VisioSEO",
-    description:
-      "I worked on this Saas which creates AI-powered, search engine-optimized landing pages that maximize visibility. UX-optimized pages ensure high usability and an improved user experience.",
-    externalLink: "#",
-    // github: "#",
-    tools: ["Next.js", "Tailwind CSS", "TypeScript"],
-    image: "visioseo_image.png",
   },
 ];

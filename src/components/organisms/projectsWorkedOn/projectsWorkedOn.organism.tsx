@@ -20,6 +20,16 @@ const ProjectsWorkedOnOrganism = () => {
       <HeadingBannerAtom text="Featured Projects I worked On" />
 
       <div className="w-full hidden lg:flex flex-col gap-[180px] ">
+        <LeftOrientationProjectCard
+          image={images.visioseoImage}
+          title={"Visioseo"}
+          description={
+            "A scalable SEO platform that boosts local and nationwide visibility on Google, driving qualified leads and sustainable business growth."
+          }
+          tools={["Next.js", "Tailwind CSS", "TypeScript"]}
+          // github={project.github}
+          externalLink={"https://www.visioseo.io/"}
+        />
         <RightOrientationProjectCard
           image={images.valletPayImage}
           title={"ValletPay"}
@@ -51,16 +61,6 @@ const ProjectsWorkedOnOrganism = () => {
           tools={project.tools}
           // github={project.github}
           externalLink={"https://mynkwa.com/en"}
-        />
-        <LeftOrientationProjectCard
-          image={images.visioseoImage}
-          title={"Visioseo"}
-          description={
-            "A scalable SEO platform that boosts local and nationwide visibility on Google, driving qualified leads and sustainable business growth."
-          }
-          tools={["Next.js", "Tailwind CSS", "TypeScript"]}
-          // github={project.github}
-          externalLink={"https://www.visioseo.io/"}
         />
       </div>
       <div className="flex flex-col gap-5 lg:hidden ">
